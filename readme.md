@@ -1,6 +1,6 @@
 # Advent of code
 
-Tout les exercices que j'ai résolus sur [Advent of code](https://adventofcode.com)
+Tous les exercices que j'ai résolus sur [Advent of code](https://adventofcode.com)
 
 ## Exercice complété
 
