@@ -4,6 +4,9 @@ import org.slicedPotatoes.adventOfCode._2015.day07.operation.Operation;
 
 import java.util.Map;
 
+/**
+ * Classe concrète d'un nœud porte logique
+ */
 public class LogicGate extends Node {
     private final Node[] parents;
     private final Operation op;

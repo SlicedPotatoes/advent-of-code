@@ -1,7 +1,10 @@
 package org.slicedPotatoes.adventOfCode._2015.day03;
 
+/**
+ * Classe représentant une position sur un plan 2D
+ */
 public class Point {
-    private int x, y;
+    private final int x, y;
 
     public Point(int x, int y) {
         this.x = x;

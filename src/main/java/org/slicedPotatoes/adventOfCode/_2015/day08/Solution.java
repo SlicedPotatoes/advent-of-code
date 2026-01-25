@@ -7,6 +7,13 @@ import java.io.IOException;
 import java.util.List;
 
 public class Solution {
+
+    /**
+     * Calcul la longeur réel d'un string en mémoire
+     *
+     * @param s Chaine à analyser
+     * @return Longeur en memoire de la chaine
+     */
     public static int countInMemorySize(String s) {
         int size = 0;
         int flag = 0;
@@ -32,6 +39,12 @@ public class Solution {
         return size;
     }
 
+    /**
+     * Encode un string, "comme si on devait l'écrire dans du code"
+     *
+     * @param s Chaine à encoder
+     * @return La chaine encodée
+     */
     public static String encode(String s) {
         StringBuilder stb = new StringBuilder().append('"');
 

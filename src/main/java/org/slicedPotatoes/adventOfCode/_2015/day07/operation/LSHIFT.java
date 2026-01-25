@@ -1,5 +1,8 @@
 package org.slicedPotatoes.adventOfCode._2015.day07.operation;
 
+/**
+ * Classe concrète d'une Opération bitwise LSHIFT
+ */
 public class LSHIFT extends Operation {
     @Override
     public Integer process() {

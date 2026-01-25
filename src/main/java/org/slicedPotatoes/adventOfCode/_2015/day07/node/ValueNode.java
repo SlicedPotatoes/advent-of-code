@@ -2,6 +2,9 @@ package org.slicedPotatoes.adventOfCode._2015.day07.node;
 
 import java.util.Map;
 
+/**
+ * Classe concrète d'un nœud avec une valeur
+ */
 public class ValueNode extends Node {
     private final int value;
 

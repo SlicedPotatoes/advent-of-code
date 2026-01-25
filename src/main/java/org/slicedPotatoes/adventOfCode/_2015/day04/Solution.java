@@ -5,7 +5,6 @@ import org.slicedPotatoes.adventOfCode.utils.ReadFile;
 import java.io.IOException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-import java.util.Arrays;
 
 public class Solution {
 
@@ -21,7 +20,7 @@ public class Solution {
         int a = i & 0b00001111;
         int b = (i & 0b11110000) >> 4;
 
-        return "" + values.charAt(b) + values.charAt(a);
+        return String.valueOf(values.charAt(b)) + values.charAt(a);
     }
 
     /**
@@ -65,6 +64,14 @@ public class Solution {
         return true;
     }
 
+    /**
+     * Recherche le plus petit nombre a concaténé à une chaine, pour que le MD5 de cette chaine commence par x zéro.
+     *
+     * @param content Chaine initiale
+     * @param nbStartZero Nombre de zéro voulu en début de chaine
+     * @return Le nombre a concaténé pour obtenir un MD5 commençant par x zéro
+     * @throws NoSuchAlgorithmException
+     */
     public static int resolve(String content, int nbStartZero) throws NoSuchAlgorithmException {
         int res = 0;
 

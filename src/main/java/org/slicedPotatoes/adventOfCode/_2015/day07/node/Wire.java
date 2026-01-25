@@ -2,6 +2,10 @@ package org.slicedPotatoes.adventOfCode._2015.day07.node;
 
 import java.util.Map;
 
+/**
+ * Classe concrète d'un nœud "fil"
+ * <p>Il peut envoyer un signal codé sur 16 bits (2 octets).</p>
+ */
 public class Wire extends Node {
     private Node parent;
     private String id;
@@ -13,7 +17,9 @@ public class Wire extends Node {
     @Override
     public Integer getValue(Map<String, Integer> memo) {
         if(!memo.containsKey(this.id)) {
-            memo.put(this.id, this.parent.getValue(memo));
+            int value = this.parent.getValue(memo) & 0xFFFF;
+
+            memo.put(this.id, value);
         }
 
         return memo.get(this.id);

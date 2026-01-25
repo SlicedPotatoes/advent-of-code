@@ -5,6 +5,9 @@ import org.slicedPotatoes.adventOfCode._2015.day07.operation.*;
 import java.util.Map;
 import java.util.function.Supplier;
 
+/**
+ * Classe permettant de récupérer une instance d'Operation à partir d'une chaine de caractère
+ */
 public class OperationFactory {
     private static final Map<String, Supplier<Operation>> OPERATIONS = Map.ofEntries(
             Map.entry("OR", OR::new),
