@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 public class Solution {
 
@@ -19,7 +20,7 @@ public class Solution {
      * @return true ou false en fonction de si elle respecte les critères
      */
     public static boolean isNiceStringPart1(String s) {
-        List<String> illegal = List.of("ab", "cd", "pq", "xy");
+        Set<String> illegal = Set.of("ab", "cd", "pq", "xy");
         String vowels = "aeiou";
 
         int countVowels = 0;
