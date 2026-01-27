@@ -5,12 +5,19 @@ import org.slicedPotatoes.adventOfCode.utils.ReadFile;
 import java.io.IOException;
 
 public class Solution {
+    /**
+     * Génère le terme de suivant de la suite de Conway
+     *
+     * @param s Terme actuel
+     * @return Terme suivant
+     */
     public static String lookAndSaySequence(String s) {
         StringBuilder stb = new StringBuilder();
 
         char c = s.charAt(0);
         int count = 1;
 
+        // Compte les occurrences consecutive de chaque nombre et construit progressivement la chaine
         for(int i = 1; i < s.length(); i++) {
             char curr = s.charAt(i);
 
