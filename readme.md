@@ -2,6 +2,8 @@
 
 Tous les exercices que j'ai résolus sur [Advent of code](https://adventofcode.com)
 
+Ancien repos avec mes solutions en [C++](https://github.com/SlicedPotatoes/Advent_of_code_OLD)
+
 ## Exercice complété
 
 ### 2025
@@ -20,6 +22,7 @@ Tous les exercices que j'ai résolus sur [Advent of code](https://adventofcode.c
 | [Day 10: Factory](https://adventofcode.com/2025/day/10)             | :x: Non résolu            |                                                                                            |
 | [Day 11: Reactor](https://adventofcode.com/2025/day/11)             | :x: Non résolu            |                                                                                            |
 | [Day 12: Christmas Tree Farm](https://adventofcode.com/2025/day/12) | :x: Non résolu            |                                                                                            |
+
 ### 2015
 
 | Exercice                                                                             | Status                    | Solution                                                                                   |
