@@ -4,6 +4,22 @@ Tous les exercices que j'ai résolus sur [Advent of code](https://adventofcode.c
 
 ## Exercice complété
 
+### 2025
+
+| Exercice                                                            | Status                    | Solution                                                                                   |
+|---------------------------------------------------------------------|---------------------------|--------------------------------------------------------------------------------------------|
+| [Day 1: Secret Entrance](https://adventofcode.com/2025/day/1)       | :x: Non résolu            |                                                                                            |
+| [Day 2: Gift Shop](https://adventofcode.com/2025/day/2)             | :heavy_check_mark: Résolu | [Partie 1 et 2](./src/main/java/org/slicedPotatoes/adventOfCode/_2025/day02/Solution.java) |
+| [Day 3: Lobby](https://adventofcode.com/2025/day/3)                 | :x: Non résolu            |                                                                                            |
+| [Day 4: Printing Departmen](https://adventofcode.com/2025/day/4)    | :x: Non résolu            |                                                                                            |
+| [Day 5: Cafeteria](https://adventofcode.com/2025/day/5)             | :x: Non résolu            |                                                                                            |
+| [Day 6: Trash Compactor](https://adventofcode.com/2025/day/6)       | :x: Non résolu            |                                                                                            |
+| [Day 7: Laboratories](https://adventofcode.com/2025/day/7)          | :x: Non résolu            |                                                                                            |
+| [Day 8: Playground](https://adventofcode.com/2025/day/8)            | :x: Non résolu            |                                                                                            |
+| [Day 9: Movie Theater](https://adventofcode.com/2025/day/9)         | :x: Non résolu            |                                                                                            |
+| [Day 10: Factory](https://adventofcode.com/2025/day/10)             | :x: Non résolu            |                                                                                            |
+| [Day 11: Reactor](https://adventofcode.com/2025/day/11)             | :x: Non résolu            |                                                                                            |
+| [Day 12: Christmas Tree Farm](https://adventofcode.com/2025/day/12) | :x: Non résolu            |                                                                                            |
 ### 2015
 
 | Exercice                                                                             | Status                    | Solution                                                                                   |
