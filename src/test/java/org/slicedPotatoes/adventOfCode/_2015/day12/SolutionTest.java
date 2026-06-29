@@ -10,7 +10,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class _2015_12 {
+class SolutionTest {
     private ObjectMapper mapper = new ObjectMapper();
 
     private static Stream<Arguments> part1() {
