@@ -38,7 +38,7 @@ Ancien repos avec mes solutions en [C++](https://github.com/SlicedPotatoes/Adven
 | [Day 9: All in a Single Night](https://adventofcode.com/2015/day/9)                  | :heavy_check_mark: Résolu | [Partie 1 et 2](./src/main/java/org/slicedPotatoes/adventOfCode/_2015/day09/Solution.java) |
 | [Day 10: Elves Look, Elves Say](https://adventofcode.com/2015/day/10)                | :heavy_check_mark: Résolu | [Partie 1 et 2](./src/main/java/org/slicedPotatoes/adventOfCode/_2015/day10/Solution.java) |
 | [Day 11: Corporate Policy](https://adventofcode.com/2015/day/11)                     | :heavy_check_mark: Résolu | [Partie 1 et 2](./src/main/java/org/slicedPotatoes/adventOfCode/_2015/day11/Solution.java) |
-| [Day 12: JSAbacusFramework.io](https://adventofcode.com/2015/day/12)                 | :x: Non résolu            |                                                                                            |
+| [Day 12: JSAbacusFramework.io](https://adventofcode.com/2015/day/12)                 | :heavy_check_mark: Résolu | [Partie 1 et 2](./src/main/java/org/slicedPotatoes/adventOfCode/_2015/day12/Solution.java) |
 | [Day 13: Knights of the Dinner Table](https://adventofcode.com/2015/day/13)          | :x: Non résolu            |                                                                                            |
 | [Day 14: Reindeer Olympics](https://adventofcode.com/2015/day/14)                    | :x: Non résolu            |                                                                                            |
 | [Day 15: Science for Hungry People](https://adventofcode.com/2015/day/15)            | :x: Non résolu            |                                                                                            |
