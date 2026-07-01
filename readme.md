@@ -43,7 +43,7 @@ Ancien repos avec mes solutions en [C++](https://github.com/SlicedPotatoes/Adven
 | [Day 14: Reindeer Olympics](https://adventofcode.com/2015/day/14)                    | :heavy_check_mark: Résolu | [Partie 1 et 2](./src/main/java/org/slicedPotatoes/adventOfCode/_2015/day14/Solution.java) |
 | [Day 15: Science for Hungry People](https://adventofcode.com/2015/day/15)            | :heavy_check_mark: Résolu | [Partie 1 et 2](./src/main/java/org/slicedPotatoes/adventOfCode/_2015/day15/Solution.java) |
 | [Day 16: Aunt Sue](https://adventofcode.com/2015/day/16)                             | :heavy_check_mark: Résolu | [Partie 1 et 2](./src/main/java/org/slicedPotatoes/adventOfCode/_2015/day16/Solution.java) |
-| [Day 17: No Such Thing as Too Much](https://adventofcode.com/2015/day/17)            | :x: Non résolu            |                                                                                            |
+| [Day 17: No Such Thing as Too Much](https://adventofcode.com/2015/day/17)            | :heavy_check_mark: Résolu | [Partie 1 et 2](./src/main/java/org/slicedPotatoes/adventOfCode/_2015/day17/Solution.java) |
 | [Day 18: Like a GIF For Your Yard](https://adventofcode.com/2015/day/18)             | :x: Non résolu            |                                                                                            |
 | [Day 19: Medicine for Rudolph](https://adventofcode.com/2015/day/19)                 | :x: Non résolu            |                                                                                            |
 | [Day 20: Infinite Elves and Infinite Houses](https://adventofcode.com/2015/day/20)   | :x: Non résolu            |                                                                                            |
