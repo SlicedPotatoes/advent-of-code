@@ -1,74 +1,68 @@
 package org.slicedPotatoes.adventOfCode._2015.day07;
 
-import org.slicedPotatoes.adventOfCode._2015.day07.node.LogicGate;
-import org.slicedPotatoes.adventOfCode._2015.day07.node.Node;
-import org.slicedPotatoes.adventOfCode._2015.day07.node.ValueNode;
+import org.slicedPotatoes.adventOfCode._2015.day07.node.Constant;
+import org.slicedPotatoes.adventOfCode._2015.day07.node.GraphElement;
 import org.slicedPotatoes.adventOfCode._2015.day07.node.Wire;
+import org.slicedPotatoes.adventOfCode._2015.day07.node.logical_gate.LogicalGate;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class Circuit {
-    // Map pour associer un id et un nœud cable
-    private Map<String, Wire> wires;
-
-    public Circuit() {
-        this.wires = new HashMap<>();
-    }
+    private Map<String, Wire> wires = new HashMap<>();
 
     /**
-     * Renvoie un Wire à partir de son id<br>
-     * Si aucun Wire n'existe avec cet id, il est créé
+     * Renvoie un {@link Wire} à partir de son id <br>
+     * Si aucun {@link Wire} n'existe avec cet id, il est créé
      *
-     * @param id ID d'un Wire
-     * @return Wire avec l'id correspondant
+     * @param id ID du {@link Wire}
+     * @return {@link Wire} avec l'id correspondant
      */
-    private Wire getOrCreateWire(String id) {
-        if(!this.wires.containsKey(id)) {
-            this.wires.put(id, new Wire(id));
+    private Wire getWire(String id) {
+        if (!wires.containsKey(id)) {
+            wires.put(id, new Wire(id));
         }
 
-        return this.wires.get(id);
+        return wires.get(id);
     }
 
     /**
-     * Récupère un nœud à partir d'une chaine de caractère<br>
+     * Récupérer un {@link GraphElement} à partir d'une chaine de caractère <br>
+     * <p>
+     * Si la chaine est un entier, renvoie une {@link Constant} <br>
+     * Sinon renvoie un {@link Wire}
      *
-     * <p>Si la chaine est un entier, renvois un nœud de type ValueNode<br>
-     * Sinon renvoie un nœud de type Wire</p>
-     *
-     * @param s Chaine de caractère
-     * @return Le nœud correspondant
+     * @param id Chaine de caractère
+     * @return Le {@link GraphElement} correspondant
      */
-    public Node getNode(String s) {
+    public GraphElement getElement(String id) {
         try {
-            return new ValueNode(Integer.parseInt(s));
-        }
-        catch (Exception e) {
-            return this.getOrCreateWire(s);
+            return new Constant(Integer.parseInt(id));
+        } catch (Exception _) {
+            return getWire(id);
         }
     }
 
     /**
-     * Assigner une valeur à un nœud, la valeur peut être un autre nœud
+     * Assigner une entrée à un {@link Wire}
      *
-     * @param from Valeur à assigner
-     * @param idTo Nœud de destination
+     * @param value Valeur à assigner
+     * @param idTo  id du {@link Wire}
      */
-    public void assignNodeToNode(String from, String idTo) {
-        Node fromN = this.getNode(from);
-        Wire toN = this.getOrCreateWire(idTo);
+    public void assignInputToWire(String value, String idTo) {
+        GraphElement from = getElement(value);
+        Wire to = getWire(idTo);
 
-        toN.setParent(fromN);
+        to.setInput(from);
     }
 
     /**
-     * Ajouter une porte logique en entrée d'un fils
+     * Assigner une porte logique en entrée d'un {@link Wire}
      *
-     * @param lg Nœud porte logique
-     * @param to Nœud fil
+     * @param lg   Porte logique
+     * @param idTo id du {@link Wire}
      */
-    public void addLogicGateToInputWire(LogicGate lg, String to) {
-        this.getOrCreateWire(to).setParent(lg);
+    public void assignLogicalGateInputToWire(LogicalGate lg, String idTo) {
+        getWire(idTo).setInput(lg);
     }
 }

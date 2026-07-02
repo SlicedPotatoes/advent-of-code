@@ -3,17 +3,17 @@ package org.slicedPotatoes.adventOfCode._2015.day07.node;
 import java.util.Map;
 
 /**
- * Classe concrète d'un nœud avec une valeur
+ * Constante avec une valeur
  */
-public class ValueNode extends Node {
+public class Constant implements GraphElement {
     private final int value;
 
-    public ValueNode(int value) {
+    public Constant(int value) {
         this.value = value;
     }
 
     @Override
-    public Integer getValue(Map<String, Integer> memo) {
+    public int getValue(Map<String, Integer> memo) {
         return this.value;
     }
 }
