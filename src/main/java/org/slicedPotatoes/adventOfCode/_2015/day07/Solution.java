@@ -23,25 +23,16 @@ public class Solution {
             circuit.assignInputToWire(operationElements[0], parsedLine[1]);
         }
         else if(operationElements.length == 2) {
-            LogicalGate logicalGate = LogicalGateFactory.create(operationElements[0]);
+            GraphElement input = circuit.getElement(operationElements[1]);
 
-            GraphElement[] n = new GraphElement[] {
-                    circuit.getElement(operationElements[1])
-            };
-
-            logicalGate.setInput(n);
+            LogicalGate logicalGate = LogicalGateFactory.create(operationElements[0], input);
             circuit.assignLogicalGateInputToWire(logicalGate, parsedLine[1]);
         }
         else {
-            LogicalGate logicalGate = LogicalGateFactory.create(operationElements[1]);
+            GraphElement inputA =  circuit.getElement(operationElements[0]);
+            GraphElement inputB =  circuit.getElement(operationElements[2]);
 
-            GraphElement[] inputs = new GraphElement[] {
-                    circuit.getElement(operationElements[0]),
-                    circuit.getElement(operationElements[2])
-            };
-
-            logicalGate.setInput(inputs);
-
+            LogicalGate logicalGate = LogicalGateFactory.create(operationElements[1], inputA, inputB);
             circuit.assignLogicalGateInputToWire(logicalGate, parsedLine[1]);
         }
     }
